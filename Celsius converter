@@ -1,0 +1,23 @@
+from tkinter import *
+
+
+def convert():
+    x = entry.get()
+    if x != "":    
+        cel=int(x)
+        far=(9/5*(cel))+32
+        result_label.config(text=f"{far:.2f}F")
+
+root=Tk()
+root.title("Converter")
+root.geometry("300x200")
+
+Label(root,text="Enter a Celsius temperature.").pack()
+entry = Entry(root)
+entry.pack()
+Button(root, text="Convert", command=convert).pack()
+
+result_label =Label(root, text="")
+result_label.pack()
+
+root.mainloop()
