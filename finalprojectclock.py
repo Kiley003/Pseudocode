@@ -65,7 +65,7 @@ def settings_opened_message():
 window = Tk()
 window.title("Final Project Alarm Clock") #sets the window title
 window.geometry("500x290") #sets the window size
-window.config(bg="#FF81C0") #imports the background image
+window.config('D:/Library/Documents/Collegework/Python/pink.png') #imports the background image
 window.resizable(width=False,height=False) #disables windows resize
 
 #adding labels and input fields for the alarm time
@@ -92,12 +92,11 @@ command=("open"), font=(20)).place(x=10, y=240)
 submit = Button(window, text ="Exit", 
 command=("window.destroy"), font=(20)).place(x=450, y=240)
 
-
 #creating the second window
 window = Tk()
 window.title("Settings") #setting window title
 window.geometry("200x360") #setting window size
-window.config(bg="#FF81C0") #importing background image
+window.config('D:/Library/Documents/Collegework/Python/pink.png')#importing background image
 window.resizable(width=False,height=False) #disables window resizing
 
 #buttons and lables for alarm settings
@@ -133,7 +132,7 @@ def exit_application():
 window = Tk()
 window.title("Choosing Alarm Sound")
 window.geometry("300x360")
-window.config(bg="#FF81C0")
+window.config('D:/Library/Documents/Collegework/Python/pink.png')
 window.resizable(width=False,height=False)
 
 #dictionary to store ringtones paths
